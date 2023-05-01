@@ -88,13 +88,14 @@ const nav = document.querySelector(".nav"),
 
 /*==================================validation Form====================================*/
 
-const btnAccion = document.getElementById("btnAccion");
+const btnAccion = document.getElementById("button");
 btnAccion.addEventListener("click", function () {
     const name = document.getElementById("name").value;
     const mail = document.getElementById("mail").value;
     const phone = document.getElementById("phone").value;
     const message = document.getElementById("message").value;
-    if (name == "" || mail == "" || phone == "" || message == "") {
+    const acepto = document.getElementById("acepto");
+    if (name == "" || mail == "" || phone == "" || message == "" || !acepto.checked) {
       Swal.fire("Oops...", "Todos los campos con * son obligatorios", "warning");
       }else {
         Swal.fire({

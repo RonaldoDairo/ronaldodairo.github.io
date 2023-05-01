@@ -603,7 +603,7 @@
                         <h3 class="contact-title padd-15">ENVÍAME UN CORREO ELECTRÓNICO </h3>
                         <h4 class="contact-sub-title padd-15">RESPONDERÉ TUS MENSAJES</h4>
         <!--Contact Form-->
-        <form action="enviar.php" method="post">
+        <form action="enviar.php" method="post" id="form">
           <div class="row">
             <div class="contact-form  padd-15">
                     <div class="row">
@@ -635,7 +635,7 @@
                     <div class="row">
                           <div class="form-item col-1 padd-15">
                               <div class="form-group">
-                                <input type="checkbox" name="acepto" value="Acepto"> &nbsp;<span>Acepto los <a
+                                <input type="checkbox" name="acepto" value="Acepto" id="acepto" required>&nbsp;<span>Acepto los <a
                                     href="#">terminos
                                     y condiciones.</a></span>
                               </div>
@@ -643,12 +643,18 @@
                     </div>
                     <div class="row">
                               <div class="form-item col-12  padd-15">
-                                <button type="button" class="btn" id="btnAccion">Enviar Mensaje</button>
+                                <input type="submit" id="button" class="btn" value="Enviar Mensaje" >
                               </div>
                     </div>
             </div>
           </div>
         </form>
+                    <script type="text/javascript"
+                      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                        
+                    <script type="text/javascript">
+                      emailjs.init('iosud0BaRaOGF3it-')
+                    </script>
       </div>
   </div>
   </section>
@@ -681,5 +687,6 @@
                   <script src="js/script.js"></script>
                   <script src="js/style-switcher.js"></script>
                   <script src="js/sweetalert2@11.js"></script>
+                  <script src="sendemail/send-email.js"></script>
 </body>
 </html>
