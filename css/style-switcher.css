@@ -66,12 +66,11 @@ justify-content: space-between;
     height:30px;
     width:30px;
     border-radius:50%;
-    cursor: pointer;
 
 }
 .style-switcher .color-1
 {
-   background: #1854b4; 
+    background: #1854b4;
 }
 .style-switcher .color-2
 {
