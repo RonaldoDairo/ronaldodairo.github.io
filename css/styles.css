@@ -999,6 +999,7 @@ h3.my-profession {
     }
     .portfolio-popup-close{
         top: .5rem;
+        left: 50%;
     }
     .work-container{
         grid-template-columns: repeat(1, 1fr);
