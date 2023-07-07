@@ -661,6 +661,7 @@ h3.my-profession {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
     padding: 1rem;
     border-radius: .5rem;
+    text-align: center;
 
 }
 .portfolio-item-datails{
@@ -676,6 +677,7 @@ h3.my-profession {
     color: var(--text-black-900);
     font-weight: 700;
     position: relative;
+    align-items: center;
 }
 .work-button{ 
     color: var(--skin-color) ;
@@ -684,6 +686,7 @@ h3.my-profession {
     align-items: center;
     column-gap: .25rem;
     cursor: pointer;
+    justify-content: center;
 
 }
 .work-button-icon{
